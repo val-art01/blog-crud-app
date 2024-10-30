@@ -19,7 +19,7 @@ Cette application est un projet de blog complet construit à partir de zéro en 
 ## Installation
 1. **Cloner le dépôt**:
     ```sh
-    git clone https://github.com/ton-utilisateur/blog-crud-app.git
+    git clone https://github.com/val-art01/blog-crud-app.git
     cd blog-crud-app
     ```
 

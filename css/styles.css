@@ -207,7 +207,8 @@ POST GENERAL
     overflow: hidden;
     margin-bottom: 1.6rem;
 }
-.featured_container:hover .post_thumbail img{
+
+.post:hover .post_thumbail img{
     filter: saturate(0);
     transform: filter 500ms ease;
 }
@@ -241,4 +242,15 @@ EN VEDETTE
 
 .featured .post_thumbail{
     height: fit-content;
+}
+
+/* ============================================================================================
+POSTS
+===============================================================================================
+*/
+.posts_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
 }
