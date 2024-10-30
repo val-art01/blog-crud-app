@@ -78,7 +78,7 @@ h2{
 
 h3{
     font-size: 1.1rem;
-    image-rendering: 0.8rem 0 0.5rem;
+    margin: 0.8rem 0 0.5rem;
 }
 
 h4{
@@ -182,7 +182,7 @@ nav button{
 BOUTON DE CATEGORIE
 ===============================================================================================
 */
-.cotegory_button{
+.cotegory_button {
     background: var(--color-primary-light);
     color: var(--color-primary);
     display: inline-block;
@@ -193,7 +193,7 @@ BOUTON DE CATEGORIE
     text-align: center;
 }
 
-.cotegory_button:hover{
+.cotegory_button:hover {
     color: var(--color-white);
 }
 
@@ -253,4 +253,102 @@ POSTS
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     margin-bottom: 5rem;
+}
+
+/* ============================================================================================
+CATEGORY DES BUTTONS
+===============================================================================================
+*/
+.category_button{
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.category_button:hover{
+    color: var(--color-white);
+}
+
+.category_buttons{
+    padding: 4rem 0;
+    border-top: 2px solid var(--color-gray-900);
+    border-bottom: 2px solid var(--color-gray-900);
+}
+
+.category_buttons-container{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* ============================================================================================
+FOOTER
+===============================================================================================
+*/
+footer{
+    background: var(--color-gray-900);
+    padding: 5rem 0 0;
+    box-shadow: inset 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.footer_socials{
+    margin-inline: auto;
+    width: fit-content;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer_socials a{
+    background: var(--color-bg);
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_socials a:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+footer h4{
+    color: var(--color-white);
+    margin-bottom: 0.6rem;
+}
+
+footer ul li{
+    padding: 0.4rem 0;
+}
+
+footer ul a{
+    opacity: 0.75;
+}
+
+footer ul a:hover{
+    letter-spacing: 0.2rem;
+    opacity: 1;
+}
+
+.footer_copyright{
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-bg);
+    margin-top: 4rem;
 }
