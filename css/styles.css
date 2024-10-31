@@ -221,7 +221,7 @@ POST GENERAL
 
 .post_author-avatar{
     width: 7rem;
-    height: 10rem;
+    height: 5rem;
     border-radius: var(--card-border-radius-3);
     overflow: hidden;
 }
@@ -403,6 +403,29 @@ BLOG SEARCH
     
 }
 
+/* ============================================================================================
+POSTE UNIQUE
+===============================================================================================
+*/
+.singlepost {
+    margin: 6rem 0 2rem;
+}
+
+.singlepost-container{
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 2rem;
+}
+
+.singlepost_thumbnail{
+    margin: 1rem 0;
+}
+
+.singlepost-container p {
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
 
 
 
@@ -581,6 +604,12 @@ MEDIA QUERIES (SMALL DEVICES)
     /* =============================================== BLOG SEARCH ===============================================*/
     .search_bar-container {
         width: var(--container-width-md);
+    }
+
+    /* =============================================== POST ===============================================*/
+    .singlepost-container{
+        background-color: transparent;
+        padding: 0;
     }
 
 }
