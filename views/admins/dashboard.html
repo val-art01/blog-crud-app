@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-     <!-- ======================================  NAV BAR  =================================================== --> 
+    <!-- ======================================  Nav Bar  =================================================== --> 
     <nav>
         <div class="container nav_container">
             <a href="/index.html" class="nav_logo">VAL.ART~Solution</a>
@@ -40,30 +41,84 @@
         </div>
     </nav>
 
-    <section class="from_section">
-        <div class="container from_section-container">
-            <h2>Add User</h2>
-            <div class="alert_message error">
-                <p>This is error message</p>
-            </div>
-            <form action="" enctype="multipart/form-data">
-                <input type="text" placeholder="First Name"/>
-                <input type="text" placeholder="Last Name"/>
-                <input type="text" placeholder="Username"/>
-                <input type="email" placeholder="Email"/>
-                <input type="password" placeholder="Create Password"/>
-                <input type="password" placeholder="Confirm Password"/>
-                <select name="" id="">
-                    <option value="0">Author</option>
-                    <option value="1">Admin</option>
-                </select>
-        
-                <div class="form_control">
-                    <label for="avatar">User Avatar</label>
-                    <input type="file" id="avatar"/>
-                </div>
-                <button type="submit" class="btn">Add User</button>
-            </form>
+    <section class="dashboard">
+        <div class="container dashboard_container">
+            <button id="show_sidebar-btn" class="sidebar_toggle"><i class='bx bx-right-arrow-circle' ></i></button>
+            <button id="hide_sidebar-btn" class="sidebar_toggle"><i class='bx bx-left-arrow-circle'></i></button>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="/views/posts/add-post.html">
+                            <i class='uil uil-pen' ></i>
+                            <h5>Add Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/views/admins/dashboard.html" class="active">
+                            <i class='uil uil-postcard' ></i>
+                            <h5>Manage Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/views/users/add-user.html">
+                            <i class='uil uil-user-plus' ></i>
+                            <h5>Add User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/views/users/manage-user.html">
+                            <i class='bx bxs-user-account'></i>
+                            <h5>Manage User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/views/categorys/add-category.html">
+                            <i class='uil uil-edit' ></i>
+                            <h5>Add Category</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/views/categorys/manage-categories.html">
+                            <i class='uil uil-list-ul' ></i>
+                            <h5>Manage Categories</h5>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main>
+                <h2>Manage Post</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum odor amet, consectetuer adipiscing elit</td>
+                            <td>Val</td>
+                            <td><a href="/views/categorys/edit-category.html" class="btn sm">Edit</a></td>
+                            <td><a href="/views/categorys/delete-category.html" class="btn sm danger">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dictum vehicula nostra et congue ad molestie</td>
+                            <td>Live</td>
+                            <td><a href="/views/categorys/edit-category.html" class="btn sm">Edit</a></td>
+                            <td><a href="/views/categorys/delete-category.html" class="btn sm danger">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mollis lacinia dis cubilia bibendum elit hendrerit ut tempor tempor</td>
+                            <td>Art</td>
+                            <td><a href="/views/categorys/edit-category.html" class="btn sm">Edit</a></td>
+                            <td><a href="/views/categorys/delete-category.html" class="btn sm danger">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
         </div>
     </section>
 
@@ -126,3 +181,4 @@
     <script src="/js/main.js"></script>
 </body>
 </html>
+    

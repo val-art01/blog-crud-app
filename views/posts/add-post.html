@@ -21,13 +21,13 @@
             <a href="/index.html" class="nav_logo">VAL.ART~Solution</a>
             <ul class="nav_items">
                 <li><a href="/views/blog.html">Blog</a></li>
-                <li><a href="/views/about.html">About</a></li>
-                <li><a href="/views/services.html">Services</a></li>
-                <li><a href="/views/contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <!-- <li><a href="signin.html">Signin</a></li> -->
                 <li class="nav_profile">
                     <div class="avatar">
-                        <img src="/images/logo.jpg" alt="">
+                        <img src="./images/logo.jpg" alt="">
                     </div>
                     <ul>
                         <li><a href="dashboard.html">Dashboard</a></li>
@@ -42,27 +42,30 @@
 
     <section class="from_section">
         <div class="container from_section-container">
-            <h2>Add User</h2>
+            <h2>Add Post</h2>
             <div class="alert_message error">
                 <p>This is error message</p>
             </div>
             <form action="" enctype="multipart/form-data">
-                <input type="text" placeholder="First Name"/>
-                <input type="text" placeholder="Last Name"/>
-                <input type="text" placeholder="Username"/>
-                <input type="email" placeholder="Email"/>
-                <input type="password" placeholder="Create Password"/>
-                <input type="password" placeholder="Confirm Password"/>
+                <input type="text" placeholder="Title"/>
                 <select name="" id="">
-                    <option value="0">Author</option>
-                    <option value="1">Admin</option>
+                    <option value="1">Art</option>
+                    <option value="1">Wild Life</option>
+                    <option value="1">Travel</option>
+                    <option value="1">Music</option>
+                    <option value="1">Food</option>
+                    <option value="1">Repair</option>
                 </select>
-        
-                <div class="form_control">
-                    <label for="avatar">User Avatar</label>
-                    <input type="file" id="avatar"/>
+                <textarea name="" id="" rows="10" placeholder="Body"></textarea>
+                <div class="form_control inline">
+                    <input type="checkbox" name="" id="is_featured"/>
+                    <label for="is_featured" checked>Featured</label>
                 </div>
-                <button type="submit" class="btn">Add User</button>
+                <div class="form_control">
+                    <label for="thumbnail">Add Thumbnail</label>
+                    <input type="file" id="thumbnail"/>
+                </div>
+                <button type="submit" class="btn">Add Post</button>
             </form>
         </div>
     </section>
