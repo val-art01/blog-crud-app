@@ -2,6 +2,9 @@
 
 Cette application est un projet de blog complet construit à partir de zéro en utilisant PHP et MySQL, en mettant l'accent sur les principes de conception modernes pour le frontend et la programmation procédurale pour le backend.
 
+## Aperçu
+   ![Aperçu du projet](#)
+
 ## Fonctionnalités
 - Ajouter, lire, mettre à jour et supprimer des articles de blog.
 - Interface réactive et moderne utilisant HTML, CSS et JavaScript.
@@ -35,10 +38,11 @@ Cette application est un projet de blog complet construit à partir de zéro en 
 - **Lancer le serveur**: Démarrez Apache et MySQL depuis le panneau de contrôle de XAMPP.
 - **Accéder à l'application**: Ouvrez votre navigateur et allez à `http://localhost/blog-crud-app/`.
 
-## Auteur
-- **Nom**: [Ton Nom]
-- **Email**: [Ton Email]
+
+## Source
+Ce projet a été réalisé en suivant un tutoriel YouTube. Vous pouvez consulter la vidéo d'origine [ici](https://youtu.be/9j9BTyQtghM). Merci au créateur de la vidéo pour ses instructions claires et utiles.
+
 
 ## Licence
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE.txt) pour plus de détails.
 
